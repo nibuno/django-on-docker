@@ -20,9 +20,9 @@ NOTE: `django.db.utils.OperationalError: connection to server at "db" (172.27.0.
 ### prod
 
 ```shell
-docker compose -f docker-compose.prod.yml up -d --build
-docker compose -f docker-compose.prod.yml exec web python manage.py migrate --noinput
-docker compose -f docker-compose.prod.yml exec web python manage.py collectstatic --no-input --clear
+docker compose -f compose.prod.yaml up -d --build
+docker compose -f compose.prod.yaml exec web python manage.py migrate --noinput
+docker compose -f compose.prod.yaml exec web python manage.py collectstatic --no-input --clear
 ```
 
 NOTE: -dオプションをつけることでバックグラウンドで起動する
