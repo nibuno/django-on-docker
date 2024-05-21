@@ -39,3 +39,7 @@ NOTE: -vオプションをつけることでボリュームも削除される
 ```shell
 docker compose down -v
 ```
+
+### devとprodを切り替える時
+
+NOTE: devとprodを切り替える場合、ボリュームを削除してから切り替える必要がありそう
