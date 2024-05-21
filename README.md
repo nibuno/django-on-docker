@@ -15,6 +15,8 @@ docker compose -f docker-compose.prod.yml exec web python manage.py collectstati
 NOTE: -dオプションをつけることでバックグラウンドで起動する
 --buildオプションをつけることで強制的にビルドする
 
+http://localhost:1337/ でアクセス可能
+
 
 ## コンテナの停止とボリュームの削除
 
