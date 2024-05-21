@@ -14,7 +14,7 @@ docker compose up
 http://localhost:8000/ でアクセス可能
 
 NOTE: `django.db.utils.OperationalError: connection to server at "db" (172.27.0.2), port 5432 failed: FATAL:  database "hello_django_dev" does not exist`
-が出た場合は、`docker-compose exec web python manage.py migrate --noinput`を実行する
+が出た場合は、ボリュームを削除してから`docker-compose exec web python manage.py migrate --noinput`を実行する
 
 
 ### prod
