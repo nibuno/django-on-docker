@@ -27,6 +27,8 @@ docker compose -f compose.prod.yaml exec web python manage.py collectstatic --no
 
 NOTE: -dオプションをつけることでバックグラウンドで起動する
 --buildオプションをつけることで強制的にビルドする
+-f オプションをつけることでファイルを指定する
+[-f を使い、Compose ファイルの名前とパスを指定](https://docs.docker.jp/compose/reference/index.html#f-compose)
 
 http://localhost:1337/ でアクセス可能
 
